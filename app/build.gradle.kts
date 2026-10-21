@@ -5,13 +5,13 @@ plugins {
 }
 
 android {
-    namespace = "kr.ac.kumoh.ce.s20260000.s26w06navigation"
+    namespace = "kr.ac.kumoh.s20211107.s26w06navigation"
     compileSdk {
         version = release(37)
     }
 
     defaultConfig {
-        applicationId = "kr.ac.kumoh.ce.s20260000.s26w06navigation"
+        applicationId = "kr.ac.kumoh.s20211107.s26w06navigation"
         minSdk = 24
         targetSdk = 37
         versionCode = 1

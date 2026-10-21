@@ -24,6 +24,7 @@ import androidx.navigation3.runtime.rememberSaveableStateHolderNavEntryDecorator
 import androidx.navigation3.ui.NavDisplay
 import kotlinx.serialization.Serializable
 import kr.ac.kumoh.s20211107.s26w06navigation.navigation.PokemonRoute
+import kr.ac.kumoh.s20211107.s26w06navigation.repository.ApiPokemonRepository
 import kr.ac.kumoh.s20211107.s26w06navigation.repository.MockPokemonRepository
 import kr.ac.kumoh.s20211107.s26w06navigation.repository.PokemonRepository
 import kr.ac.kumoh.s20211107.s26w06navigation.ui.screen.PokemonDetailScreen
@@ -37,7 +38,8 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
-        val repository: PokemonRepository = MockPokemonRepository()
+        //val repository: PokemonRepository = MockPokemonRepository()
+        val repository = ApiPokemonRepository()
 
         setContent {
             S26W06NavigationTheme {
