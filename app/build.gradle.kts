@@ -48,6 +48,7 @@ dependencies {
     // https://github.com/coil-kt/coil/releases
     implementation("io.coil-kt.coil3:coil-compose:3.6.3")
     implementation("io.coil-kt.coil3:coil-network-okhttp:3.6.3")
+    implementation(libs.androidx.ui)
 
     // Navigation 3
     // https://developer.android.com/jetpack/androidx/releases/navigation3?hl=ko
